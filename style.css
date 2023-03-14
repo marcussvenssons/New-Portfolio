@@ -85,7 +85,7 @@ nav ul li a:hover::after{
 }
 .about-col-1 img{
     width: 100%;
-    opacity: 0.4;
+    opacity: 0.8;
     border-radius: 40px;
 }
 .about-col-2 {
@@ -197,4 +197,51 @@ nav ul li a:hover::after{
 }
 .work:hover .layer{
     height: 100%;
+}
+.button{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #db562e;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;   
+    transition: background 0.5s;
+}
+.button:hover{
+    background: #db562e;
+}
+/* ------------- Contact ----------- */
+
+.contact-left{
+    flex-basis: 35%;
+
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+
+}
+.contact-left p i{
+    color: #db562e;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:grey;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: blue;
+    transform: translateY(-5px);
 }
