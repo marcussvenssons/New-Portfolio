@@ -8,18 +8,21 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/bed1de27fa.js" crossorigin="anonymous"></script>
 
+<!-- HEAD -->
 </head>
 <body>
 <div id="header">
     <div class="container">
         <nav>
             <h2 class="logo">M.<span>S</span> Portfoli<span>o</span></h2>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i id="cross" class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i id="menu" class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
     <div class="header-text">
             <p>Junior front-end developer</p>
@@ -27,7 +30,9 @@
         </div>
     </div>
 </div>
+
 <!-- ------------- about -------------- -->
+
 <div id="about">
     <div class="container">
         <div class="row">
@@ -71,7 +76,9 @@
         </div>
     </div>
 </div>
+
 <!-- ------------ Portfolio --------------- -->
+
 <div id="portfolio">
     <div class="container">
         <h2 class="sub-title">Portfolio</h2>
@@ -104,7 +111,9 @@
         <a href="#" class="button">See more</a>
     </div>
 </div>
-<!-- ------- contact -------- -->
+
+<!-- ------- Contact -------- -->
+
 <div id="contact">
     <div class="container">
         <div class="row">
@@ -117,7 +126,7 @@
                 </div>
             </div>
 
-            <!-- save this for ev usage
+            <!-- Submit field. Saved for ev usage.
             <div class="contact-right">
                 <form action="">
                     <input type="text" name="Name" placeholder="Your Name" required>
@@ -132,6 +141,7 @@
     </div>
 </div>
 
+<!-- active links for skills, experience & education -->
 <script>
 
     var tablinks = document.getElementsByClassName("tab-links");
@@ -146,6 +156,21 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<!-- show/hide menu side bar (mobile device) -->
+
+<script>
+
+    var sidemenus = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenus.style.right = "0";
+    }
+    function closemenu(){
+        sidemenus.style.right = "-200px";
     }
 
 </script>
